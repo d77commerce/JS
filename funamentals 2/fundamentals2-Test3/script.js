@@ -1,13 +1,11 @@
-function oneFun(){
-console.log('test 2 2');
-}
-oneFun();
-
-function secondFun (apple, orange){
-    const juice = `Juice of ${apple} apples and ${orange} oranges.`;
-    return juice;
-}
-    const appleJuice = secondFun(5, 0);
-    console.log(appleJuice);
-    const origeJuice = secondFun(1, 4);
-    console.log(origeJuice);
+function fruitCutPieces(fruit){
+     return fruit*4;
+     
+     }
+function juceMaker(apples, oringes) {
+    const appleJuce = fruitCutPieces(apples);
+    const oringeJuce = fruitCutPieces(oringes);
+    const juce = `Juce of apple - ${appleJuce} pieces and oringe - ${oringeJuce} pieces!`;
+    return juce;
+}   
+console.log(juceMaker(7,6));
