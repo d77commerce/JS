@@ -4,10 +4,8 @@ function one (){
     let totals =[];
     let sum =0;
     sumTips =0;
-    
 
-    
-    for(let i = 0; i<bills.length;i++){
+ for(let i = 0; i<bills.length;i++){
         let tip = bills[i]>=50 && bills[i]<=300 ? bills[i]*0.15:bills[i]*0.20;
     tips.push(tip);  
     totals.push(bills[i]+tip); 
@@ -18,6 +16,4 @@ function one (){
    console.log(sum/10);
    console.log(sumTips/10);
 }
-
-
 one();
